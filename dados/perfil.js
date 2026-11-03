@@ -7,10 +7,11 @@ const PERFIL = {
   estetica: "Cor saturada, tipografia firme e muito respiro.",
   bio: "Sou designer em formação, apaixonada por identidade visual, design editorial e UI/UX. Meu processo começa na pesquisa e passa por muita experimentação com cor e tipografia, sempre com o objetivo de criar projetos que tenham personalidade e funcionem na prática. Nos últimos anos, desenvolvi marcas, revistas, embalagens e protótipos de aplicativos, tanto em projetos acadêmicos quanto autorais. Procuro oportunidades de estágio e trabalhos em estúdios e equipes de produto, onde possa aprender e contribuir.",
   interesses: ["Identidade visual", "Design editorial", "UI/UX", "Embalagem"],
-  // Exemplos: troque pelas suas experiências reais (uma por linha).
-  experiencias: [
-    "Estágio em Design Gráfico, Nome do Estúdio (2025–atual)",
-    "Designer freelancer, identidade visual e social media (2023–2025)"
+  // Exemplos: troque pelas suas experiências reais. Textos curtos funcionam melhor (viram etiquetas).
+  experiencias: ["Estágio em design gráfico", "Freelancer", "Social media", "Monitoria de tipografia"],
+  formacao: [
+    "Bacharelado em Design, Nome da Universidade (2022–2026)",
+    "Curso de UI/UX Design, Nome da Plataforma (2025)"
   ],
   email: "seuemail@exemplo.com",
   links: [

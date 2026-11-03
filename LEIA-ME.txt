@@ -1,5 +1,5 @@
 ONDE EDITAR
-dados/perfil.js       nome, experiências, foto (assets/img/foto.jpg), textos da Home e Sobre, e-mail e redes (LinkedIn, Behance, Instagram)
+dados/perfil.js       nome, experiências, formação, foto (assets/img/foto.jpg), textos da Home e Sobre, e-mail e redes (LinkedIn, Behance, Instagram)
 dados/projetos.js     seus projetos (copie um bloco para adicionar outro)
 dados/habilidades.js  suas competências
 assets/img/           coloque aqui as imagens dos projetos
