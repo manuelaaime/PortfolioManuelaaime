@@ -1,10 +1,10 @@
 /* HOME / HERO (foto à esquerda, texto à direita) */
-#home{min-height:calc(100svh - var(--topo));padding-block:clamp(1.5rem,3vw,2.5rem);display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
+#home{min-height:calc(100svh - var(--topo));padding-block:clamp(1.5rem,3vw,2.5rem);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
 #home .foto{width:100%;height:max(460px,calc(100svh - var(--topo) - 5rem));object-fit:cover;object-position:center 20%;filter:grayscale(1)}
 #home .texto{display:flex;flex-direction:column;gap:1.5rem}
 #home .area{font:500 .85rem var(--corpo);color:var(--texto-suave);text-transform:uppercase;letter-spacing:.35em}
-#home h1{font-size:clamp(2.4rem,5.5vw,4.5rem);letter-spacing:.04em}
-#home .valor{font:300 clamp(1.15rem,2.2vw,1.45rem)/1.5 var(--corpo);max-width:32ch}
+#home h1{font-size:clamp(2.4rem,7vw,10rem);letter-spacing:.04em}
+#home .valor{font:300 clamp(1.15rem,1.9vw,2.2rem)/1.5 var(--corpo);max-width:36ch}
 #home .estetica{color:var(--texto-suave)}
 .faixa{height:4px;width:96px;background:var(--destaque)}
 #home .acoes{display:flex;gap:1rem;flex-wrap:wrap}
