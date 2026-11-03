@@ -1,9 +1,9 @@
 // Monta a galeria e a janela de cada case com os dados de dados/projetos.js
 const secProj = document.getElementById("projetos"), janela = document.getElementById("caso");
-const fundo = p => p.imagem ? `background-image:url('${p.imagem}');background-color:${p.cor}` : `background:${p.cor}`;
+const fundo = p => p.imagem ? `background-image:url('${p.imagem}');background-color:${p.cor}` : `background-color:${p.cor}`;
 secProj.innerHTML = `<h2>Projetos</h2><div class="grade">` + PROJETOS.map((p, i) =>
   `<button class="card" data-i="${i}" aria-label="Abrir projeto ${p.titulo}">
-     <div class="capa" style="${fundo(p)}">${p.imagem ? "" : p.titulo}</div>
+     <div class="capa${p.imagem ? "" : " vazia"}" style="${fundo(p)}">${p.imagem ? "" : "Imagem em breve"}</div>
      <div class="card-info"><h3>${p.titulo}</h3><span>${p.categoria}, ${p.ano}</span></div></button>`).join("") + `</div>`;
 const bloco = (t, txt) => `<h4>${t}</h4><p>${txt}</p>`;
 secProj.addEventListener("click", e => {

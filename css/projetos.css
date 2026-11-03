@@ -1,19 +1,20 @@
 /* PROJETOS (galeria + janela do case) */
 .grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem}
-.card{background:var(--fundo-2);border:0;border-radius:0;overflow:hidden;text-align:left;color:inherit;cursor:pointer;font:inherit;transition:transform .2s}
-.card:hover{transform:translateY(-4px)}
-.capa{aspect-ratio:4/3;display:flex;align-items:flex-end;padding:1rem;font:800 1.3rem var(--titulo);color:#fff;text-transform:uppercase;letter-spacing:.08em;background-size:cover;background-position:center}
-.card-info{padding:1rem 1.25rem 1.4rem}
+.card{display:block;width:100%;padding:0;background:none;border:1px solid var(--linha);border-radius:0;overflow:hidden;text-align:left;color:inherit;cursor:pointer;font:inherit;transition:border-color .2s}
+.card:hover{border-color:var(--destaque)}
+.capa{aspect-ratio:4/3;display:flex;align-items:flex-end;padding:1.25rem;font:500 .7rem var(--corpo);color:rgba(255,255,255,.8);text-transform:uppercase;letter-spacing:.3em;background-size:cover;background-position:center}
+.capa.vazia{background-image:linear-gradient(rgba(255,255,255,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.1) 1px,transparent 1px);background-size:25% 25%}
+.card-info{padding:1.1rem 1.25rem 1.3rem;display:grid;gap:.35rem}
 .card-info h3{font-size:1rem;letter-spacing:.15em}
 .card-info span{color:var(--texto-suave);font-size:.75rem;text-transform:uppercase;letter-spacing:.2em}
-dialog{width:min(860px,94vw);max-height:90vh;margin:auto;background:var(--fundo);color:var(--texto);border:1px solid var(--caso-cor,var(--destaque));border-radius:0;padding:0}
+dialog{width:min(860px,94vw);max-height:90vh;margin:auto;background:var(--fundo);color:var(--texto);border:1px solid var(--caso-cor,var(--destaque));border-radius:0;padding:0;overscroll-behavior:contain;scrollbar-color:var(--linha) var(--fundo)}
 dialog::backdrop{background:rgba(0,0,0,.75)}
 .caso{padding:clamp(1.25rem,4vw,2.5rem)}
-.caso h3{font-size:clamp(1.8rem,5vw,2.6rem);margin-bottom:.25rem}
+.caso h3{font-size:clamp(1.4rem,5vw,2.6rem);margin-bottom:.25rem}
 .caso .cat{color:var(--texto-suave);margin-bottom:1.5rem;font-size:.8rem;text-transform:uppercase;letter-spacing:.25em}
 .caso h4{font:800 .85rem var(--titulo);color:var(--caso-cor);text-transform:uppercase;letter-spacing:.25em;margin:1.4rem 0 .3rem}
 .caso .imgs{display:grid;gap:1rem;margin-top:1rem}
 .caso .imgs img{border-radius:0}
 .paleta{display:flex;gap:.5rem;margin-top:.5rem}
 .paleta i{width:44px;height:44px;border-radius:50%;border:2px solid var(--texto)}
-.fechar{position:sticky;top:0;float:right;margin:1rem;z-index:2}
+.fechar{position:sticky;top:0;float:right;margin:1rem;z-index:2;padding:.55rem 1rem;font-size:.7rem}

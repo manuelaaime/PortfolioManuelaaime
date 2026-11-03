@@ -2,8 +2,10 @@
 #contato .miolo{display:grid;gap:2.5rem;grid-template-columns:1fr 1fr}
 #contato form{display:grid;gap:1rem}
 #contato label{display:grid;gap:.4rem;font-weight:500;font-size:.8rem;text-transform:uppercase;letter-spacing:.2em}
-#contato input,#contato textarea{text-transform:none;letter-spacing:normal;font-size:1rem}
-#contato input,#contato textarea{padding:.8rem 1rem;border-radius:0;border:1px solid var(--linha);background:var(--fundo-2);color:var(--texto);font:inherit}
+#contato input,#contato textarea{padding:.8rem 1rem;border-radius:0;border:1px solid var(--linha);background:var(--fundo-2);color:var(--claro);font:400 1rem var(--corpo);text-transform:none;letter-spacing:normal}
 #contato input:focus,#contato textarea:focus{border-color:var(--destaque);outline:none}
-#contato .lista{list-style:none;padding:0;display:grid;gap:.6rem;margin-top:1rem}
+#contato .lista{list-style:none;padding:0;display:grid;gap:.6rem;margin-top:1.5rem}
+#contato .lista a{text-underline-offset:.25em;font-size:.85rem;text-transform:uppercase;letter-spacing:.2em}
+#contato .lista li:first-child a{font-size:clamp(1.15rem,2.2vw,1.5rem);text-transform:none;letter-spacing:0;color:var(--claro);text-decoration-color:var(--destaque);text-underline-offset:.3em}
+#contato .lista li:first-child{margin-bottom:.75rem}
 @media(max-width:760px){#contato .miolo{grid-template-columns:1fr}}
