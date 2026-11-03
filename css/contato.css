@@ -1,0 +1,9 @@
+/* CONTATO */
+#contato .miolo{display:grid;gap:2.5rem;grid-template-columns:1fr 1fr}
+#contato form{display:grid;gap:1rem}
+#contato label{display:grid;gap:.4rem;font-weight:500;font-size:.8rem;text-transform:uppercase;letter-spacing:.2em}
+#contato input,#contato textarea{text-transform:none;letter-spacing:normal;font-size:1rem}
+#contato input,#contato textarea{padding:.8rem 1rem;border-radius:0;border:1px solid var(--linha);background:var(--fundo-2);color:var(--texto);font:inherit}
+#contato input:focus,#contato textarea:focus{border-color:var(--destaque);outline:none}
+#contato .lista{list-style:none;padding:0;display:grid;gap:.6rem;margin-top:1rem}
+@media(max-width:760px){#contato .miolo{grid-template-columns:1fr}}

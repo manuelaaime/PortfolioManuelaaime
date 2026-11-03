@@ -1,0 +1,7 @@
+/* HABILIDADES */
+#habilidades .colunas{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+#habilidades h3{font-size:1rem;letter-spacing:.2em;margin-bottom:1rem}
+#habilidades .item{display:flex;justify-content:space-between;align-items:center;padding:.5rem 0;border-bottom:1px solid var(--linha)}
+.pontos{display:flex;gap:4px}
+.pontos i{width:12px;height:12px;border-radius:50%;background:var(--linha)}
+.pontos i.on{background:var(--destaque)}

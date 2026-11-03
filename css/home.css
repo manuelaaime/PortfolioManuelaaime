@@ -1,0 +1,14 @@
+/* HOME / HERO (foto à esquerda, texto à direita) */
+#home{min-height:88vh;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
+#home .foto{width:100%;aspect-ratio:3/4;max-height:calc(100vh - 6rem);object-fit:cover;object-position:center 20%;filter:grayscale(1)}
+#home .texto{display:flex;flex-direction:column;gap:1.5rem}
+#home .area{font:500 .85rem var(--corpo);color:var(--texto-suave);text-transform:uppercase;letter-spacing:.35em}
+#home h1{font-size:clamp(2.4rem,5.5vw,4.5rem);letter-spacing:.04em}
+#home .valor{font:300 clamp(1.15rem,2.2vw,1.45rem)/1.5 var(--corpo);max-width:32ch}
+#home .estetica{color:var(--texto-suave)}
+.faixa{height:4px;width:96px;background:var(--destaque)}
+#home .acoes{display:flex;gap:1rem;flex-wrap:wrap}
+@media(max-width:760px){
+  #home{grid-template-columns:1fr}
+  #home .foto{aspect-ratio:4/5;max-height:80vh}
+}

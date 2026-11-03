@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfólio | Design</title>
+<meta name="description" content="Portfólio de design: identidade visual, editorial, UI/UX e embalagem.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/projetos.css">
+<link rel="stylesheet" href="css/sobre.css">
+<link rel="stylesheet" href="css/habilidades.css">
+<link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+<header class="topo">
+  <a class="logo" href="#home" id="logo"></a>
+  <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">Menu</button>
+  <nav id="menu">
+    <a href="#projetos">Projetos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#contato">Contato</a>
+    <a class="btn btn-pdf" href="assets/portfolio.pdf" download>Baixar PDF</a>
+  </nav>
+</header>
+
+<main>
+  <section id="home"></section>
+  <section id="projetos"></section>
+  <section id="sobre"></section>
+  <section id="habilidades"></section>
+  <section id="contato"></section>
+</main>
+
+<footer class="rodape">
+  <p id="rodape-texto"></p>
+  <a class="btn btn-pdf" href="assets/portfolio.pdf" download>Baixar portfólio em PDF</a>
+</footer>
+
+<dialog id="caso"></dialog>
+
+<!-- Dados (edite a pasta dados/) -->
+<script src="dados/perfil.js"></script>
+<script src="dados/projetos.js"></script>
+<script src="dados/habilidades.js"></script>
+<!-- Seções (cada arquivo monta uma parte do site) -->
+<script src="js/menu.js"></script>
+<script src="js/home.js"></script>
+<script src="js/projetos.js"></script>
+<script src="js/sobre.js"></script>
+<script src="js/habilidades.js"></script>
+<script src="js/contato.js"></script>
+</body>
+</html>
