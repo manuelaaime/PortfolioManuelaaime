@@ -7,12 +7,12 @@
 .card-info{padding:1.1rem 1.25rem 1.3rem;display:grid;gap:.35rem}
 .card-info h3{font-size:1rem;letter-spacing:.15em}
 .card-info span{color:var(--texto-suave);font-size:.75rem;text-transform:uppercase;letter-spacing:.2em}
-dialog{width:min(860px,94vw);max-height:90vh;margin:auto;background:var(--fundo);color:var(--texto);border:1px solid var(--caso-cor,var(--destaque));border-radius:0;padding:0;overscroll-behavior:contain;scrollbar-color:var(--linha) var(--fundo)}
+dialog{width:min(860px,94vw);max-height:90vh;margin:auto;background:var(--fundo);color:var(--texto);border:1px solid var(--destaque);border-radius:0;padding:0;overscroll-behavior:contain;scrollbar-color:var(--linha) var(--fundo)}
 dialog::backdrop{background:rgba(0,0,0,.75)}
 .caso{padding:clamp(1.25rem,4vw,2.5rem)}
 .caso h3{font-size:clamp(1.4rem,5vw,2.6rem);margin-bottom:.25rem}
 .caso .cat{color:var(--texto-suave);margin-bottom:1.5rem;font-size:.8rem;text-transform:uppercase;letter-spacing:.25em}
-.caso h4{font:800 .85rem var(--titulo);color:var(--caso-cor);text-transform:uppercase;letter-spacing:.25em;margin:1.4rem 0 .3rem}
+.caso h4{font:800 .85rem var(--titulo);color:var(--destaque-texto);text-transform:uppercase;letter-spacing:.25em;margin:1.4rem 0 .3rem}
 .caso .imgs{display:grid;gap:1rem;margin-top:1rem}
 .caso .imgs img{border-radius:0}
 .paleta{display:flex;gap:.5rem;margin-top:.5rem}

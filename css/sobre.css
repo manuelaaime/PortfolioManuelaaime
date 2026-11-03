@@ -1,6 +1,6 @@
 /* SOBRE MIM */
 #sobre .miolo{display:grid;gap:2.5rem;grid-template-columns:1.3fr 1fr}
-#sobre h3{font-size:.9rem;letter-spacing:.25em;margin:0 0 .8rem;color:var(--destaque)}
+#sobre h3{font-size:.9rem;letter-spacing:.25em;margin:0 0 .8rem;color:var(--destaque-texto)}
 #sobre ul{padding-left:1.1rem}
 #sobre li{margin-bottom:.4rem}
 #sobre .tags{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin-bottom:1.5rem}

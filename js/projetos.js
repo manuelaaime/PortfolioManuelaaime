@@ -9,7 +9,6 @@ const bloco = (t, txt) => `<h4>${t}</h4><p>${txt}</p>`;
 secProj.addEventListener("click", e => {
   const c = e.target.closest(".card"); if (!c) return;
   const p = PROJETOS[c.dataset.i];
-  janela.style.setProperty("--caso-cor", p.cor);
   janela.innerHTML = `<button class="btn fechar" aria-label="Fechar">Fechar</button><div class="caso">
     <h3>${p.titulo}</h3><p class="cat">${p.categoria}, ${p.ano}</p>
     ${bloco("Contexto", p.contexto)}${bloco("Problema", p.problema)}${bloco("Conceito", p.conceito)}

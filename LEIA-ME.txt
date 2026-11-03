@@ -4,8 +4,9 @@ dados/projetos.js     seus projetos (copie um bloco para adicionar outro)
 dados/habilidades.js  suas competências
 assets/img/           coloque aqui as imagens dos projetos
 assets/portfolio.pdf  coloque aqui o seu PDF (o botão "Baixar PDF" aponta para ele)
-css/base.css          cores, fontes, menu e rodapé (mude as cores no topo do arquivo;
-                      para texto cinza-claro, troque --texto por #E9EAED)
+css/base.css          cores, fontes, menu e rodapé. No topo ficam os dois temas:
+                      azul (:root) e branco (:root[data-tema="branco"])
+js/tema.js            botão que alterna entre os temas (lembra a escolha do visitante)
 css/home.css, projetos.css, sobre.css, habilidades.css, contato.css  visual de cada seção
 js/                   código que monta cada seção (você não precisa mexer)
 Para ver o site: abra o index.html no navegador.
