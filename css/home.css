@@ -1,6 +1,6 @@
 /* HOME / HERO (foto à esquerda, texto à direita) */
 #home{min-height:calc(100svh - var(--topo));padding-block:clamp(1.5rem,3vw,2.5rem);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
-#home .foto{width:100%;height:max(460px,calc(100svh - var(--topo) - 5rem));object-fit:cover;object-position:center 20%;filter:grayscale(1)}
+#home .foto{width:100%;height:max(460px,calc(100svh - var(--topo) - 5rem));object-fit:cover;object-position:center top;filter:grayscale(1)}
 #home .texto{display:flex;flex-direction:column;gap:1.5rem}
 #home .area{font:500 .85rem var(--corpo);color:var(--texto-suave);text-transform:uppercase;letter-spacing:.35em}
 #home h1{font-size:clamp(2.4rem,7vw,10rem);letter-spacing:.04em}
@@ -11,5 +11,14 @@
 @media(max-width:760px){
   #home{grid-template-columns:1fr}
   #home{min-height:0;padding-top:1.25rem}
-  #home .foto{height:auto;aspect-ratio:4/5;max-height:75svh}
+  #home{gap:1.5rem}
+  /* foto menor no celular: nome e botão aparecem já na primeira tela */
+  #home .foto{height:auto;aspect-ratio:4/5;max-height:46svh;object-position:center top}
+  #home .texto{gap:1.1rem}
+}
+@media(max-width:760px){
+  #home .area{font-size:.72rem;letter-spacing:.18em;line-height:1.5}
+  #home h1{font-size:2.1rem}
+  #home .valor{font-size:1.05rem}
+  #home .estetica{font-size:.9375rem}
 }

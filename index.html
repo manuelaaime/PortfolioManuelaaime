@@ -11,8 +11,8 @@
 <script src="js/tema.js"></script>
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/home.css">
-<link rel="stylesheet" href="css/projetos.css">
 <link rel="stylesheet" href="css/sobre.css">
+<link rel="stylesheet" href="css/projetos.css">
 <link rel="stylesheet" href="css/interesses.css">
 <link rel="stylesheet" href="css/habilidades.css">
 <link rel="stylesheet" href="css/contato.css">
@@ -21,10 +21,11 @@
 <header class="topo">
   <a class="logo" href="#home" id="logo"></a>
   <button class="tema-btn" id="tema-btn" type="button"><i aria-hidden="true"></i><span></span></button>
-  <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">Menu</button>
+  <a class="pdf-topo" href="assets/portfolio.pdf" download aria-label="Baixar portfólio em PDF"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M14 3H6v18h12V7z"/><path d="M14 3v4h4"/><path d="M12 10.5v6.5m0 0-2.75-2.75M12 17l2.75-2.75" stroke-linecap="round"/></svg></a>
+  <button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span aria-hidden="true"></span></button>
   <nav id="menu">
-    <a href="#projetos">Projetos</a>
     <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
     <a href="#habilidades">Habilidades</a>
     <a href="#contato">Contato</a>
     <a class="btn btn-pdf" href="assets/portfolio.pdf" download>Baixar PDF</a>
@@ -33,9 +34,9 @@
 
 <main>
   <section id="home"></section>
-  <section id="projetos"></section>
   <section id="sobre"></section>
-  <section id="interesses"></section>
+   <section id="interesses"></section>
+  <section id="projetos"></section>
   <section id="habilidades"></section>
   <section id="contato"></section>
 </main>

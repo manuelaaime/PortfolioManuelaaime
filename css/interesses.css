@@ -3,3 +3,4 @@
 #interesses .areas li{display:flex;flex-direction:column;justify-content:space-between;gap:3rem;min-height:clamp(160px,16vw,240px);padding:clamp(1.25rem,2vw,2rem);background:var(--fundo);color:var(--claro);font:800 clamp(1.3rem,2vw,1.9rem)/1.15 var(--titulo);text-transform:uppercase;letter-spacing:.06em}
 #interesses .areas li::before{content:"";width:32px;height:4px;background:var(--destaque)}
 @media(max-width:760px){#interesses .areas li{min-height:0;gap:1.25rem;padding:1.25rem}}
+@media(max-width:760px){#interesses .areas li{font-size:1.05rem;padding:1rem 1.1rem;gap:.85rem}}

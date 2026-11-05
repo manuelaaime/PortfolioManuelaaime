@@ -6,3 +6,9 @@
 #sobre .tags{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin-bottom:1.5rem}
 #sobre .tags li{padding:.35rem .9rem;border:1px solid var(--destaque);color:var(--claro);margin:0;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.15em}
 @media(max-width:760px){#sobre .miolo{grid-template-columns:1fr}}
+#sobre .bio p+p{margin-top:1.1rem}
+@media(max-width:760px){
+  #sobre h3{font-size:.78rem;letter-spacing:.18em}
+  #sobre .tags li{font-size:.68rem;letter-spacing:.1em;padding:.3rem .7rem}
+  #sobre .bio p+p{margin-top:.9rem}
+}

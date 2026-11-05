@@ -7,4 +7,4 @@ document.getElementById("home").innerHTML = `
   <p class="valor">${PERFIL.propostaDeValor}</p>
   <p class="estetica">${PERFIL.estetica}</p>
   <div class="faixa" aria-hidden="true"></div>
-  <div class="acoes"><a class="btn" href="#projetos">Ver projetos</a><a class="btn btn-pdf" href="assets/portfolio.pdf" download>Baixar PDF</a></div></div>`;
+  <div class="acoes"><a class="btn" href="#projetos">Ver projetos</a></div></div>`;

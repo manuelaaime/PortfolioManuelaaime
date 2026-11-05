@@ -1,11 +1,27 @@
 /* CONTATO */
-#contato .miolo{display:grid;gap:2.5rem;grid-template-columns:1fr 1fr}
-#contato form{display:grid;gap:1rem}
-#contato label{display:grid;gap:.4rem;font-weight:500;font-size:.8rem;text-transform:uppercase;letter-spacing:.2em}
-#contato input,#contato textarea{padding:.8rem 1rem;border-radius:0;border:1px solid var(--linha);background:var(--fundo-2);color:var(--claro);font:400 1rem var(--corpo);text-transform:none;letter-spacing:normal}
-#contato input:focus,#contato textarea:focus{border-color:var(--destaque);outline:none}
-#contato .lista{list-style:none;padding:0;display:grid;gap:.6rem;margin-top:1.5rem}
-#contato .lista a{text-underline-offset:.25em;font-size:.85rem;text-transform:uppercase;letter-spacing:.2em}
-#contato .lista li:first-child a{font-size:clamp(1.15rem,2.2vw,1.5rem);text-transform:none;letter-spacing:0;color:var(--claro);text-decoration-color:var(--destaque);text-underline-offset:.3em}
-#contato .lista li:first-child{margin-bottom:.75rem}
+#contato .miolo{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(16rem,.85fr);gap:clamp(2rem,5vw,5rem);align-items:stretch}
+#contato form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+#contato label{display:grid;gap:.45rem;font-weight:600;font-size:.75rem;text-transform:uppercase;letter-spacing:.12em}
+#contato label:last-of-type{grid-column:1/-1}
+#contato input,#contato textarea{width:100%;padding:.85rem 1rem;border-radius:.35rem;border:1px solid var(--linha);background:var(--fundo-2);color:var(--texto);font:400 1rem/1.5 var(--corpo);text-transform:none;letter-spacing:normal}
+#contato textarea{resize:vertical;min-height:9rem}
+#contato input:focus,#contato textarea:focus{border-color:var(--destaque);outline:2px solid var(--destaque);outline-offset:1px}
+#contato form .btn{justify-self:start}
+#contato .cartao-contato{display:flex;flex-direction:column;justify-content:center;gap:1.75rem;padding:clamp(1.5rem,4vw,2.5rem);border-radius:.5rem;background:#3F68F4;color:#E9EAED}
+#contato .cartao-contato h3{margin-bottom:.55rem;color:inherit;font-size:1rem;letter-spacing:.08em}
+#contato .cartao-contato p{font-size:.9rem;line-height:1.6}
+#contato .cartao-contato a{color:inherit}
+#contato .email-contato{display:inline-flex;min-height:44px;align-items:center;gap:.65rem;font-weight:600;text-decoration-thickness:1px;text-underline-offset:.2em;overflow-wrap:anywhere}
+#contato .email-contato svg{width:1.25rem;height:1.25rem;flex:none}
+#contato .lista{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.65rem;margin-top:.85rem}
+#contato .lista a{display:grid;place-items:center;width:2.75rem;height:2.75rem;border:1px solid currentColor;border-radius:50%;transition:background .2s,color .2s,transform .2s}
+@media(hover:hover){#contato .lista a:hover{background:#102124;color:#3F68F4;transform:translateY(-2px)}}
+#contato .lista svg{width:1.25rem;height:1.25rem;fill:currentColor}
+#contato .lista svg.instagram{fill:none;stroke:currentColor;stroke-width:1.8}
+#contato .lista svg.instagram .ponto{fill:currentColor;stroke:none}
+#contato .lista .icone-texto{font-size:.7rem;font-weight:800;letter-spacing:-.08em}
+:root[data-tema="branco"] #contato .cartao-contato{background:#102124;color:#FFFFFF}
+@media(hover:hover){:root[data-tema="branco"] #contato .lista a:hover{background:#FFFFFF;color:#102124}}
 @media(max-width:760px){#contato .miolo{grid-template-columns:1fr}}
+@media(max-width:460px){#contato form{grid-template-columns:1fr}#contato label:last-of-type{grid-column:auto}}
+@media(max-width:760px){#contato .cartao-contato p{font-size:.875rem}}

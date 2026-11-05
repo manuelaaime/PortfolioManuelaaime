@@ -5,3 +5,4 @@
 .pontos{display:flex;gap:4px}
 .pontos i{width:12px;height:12px;border-radius:50%;background:var(--linha)}
 .pontos i.on{background:var(--destaque)}
+@media(max-width:760px){#habilidades h3{font-size:.85rem;letter-spacing:.16em}#habilidades .item{padding:.45rem 0}}

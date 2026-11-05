@@ -26,25 +26,60 @@ p{max-width:65ch}
 a{color:var(--destaque-texto)}
 :focus-visible{outline:3px solid var(--destaque-texto);outline-offset:3px}
 .btn{display:inline-block;padding:.85rem 1.6rem;border-radius:0;background:var(--destaque);color:#fff;text-decoration:none;border:1px solid var(--destaque);cursor:pointer;font:600 .85rem var(--corpo);text-transform:uppercase;letter-spacing:.2em;transition:background .2s,color .2s}
-.btn:hover{background:transparent;color:var(--claro)}
+@media(hover:hover){.btn:hover{background:transparent;color:var(--claro)}}
 .btn-pdf{background:transparent;color:var(--claro);border-color:var(--claro)}
-.btn-pdf:hover{background:var(--claro);color:var(--fundo)}
+@media(hover:hover){.btn-pdf:hover{background:var(--claro);color:var(--fundo)}}
 .topo{position:sticky;top:0;z-index:10;display:flex;gap:1.5rem;align-items:center;height:var(--topo);padding:0 var(--margem);border-bottom:1px solid var(--linha);background:var(--topo-fundo);backdrop-filter:blur(8px)}
 .logo{margin-right:auto;font:800 1.1rem var(--titulo);color:var(--claro);text-decoration:none;text-transform:uppercase;letter-spacing:.25em}
 #menu{order:1;display:flex;gap:1.5rem;align-items:center}
 #menu a:not(.btn){color:var(--texto);text-decoration:none;font-weight:500;font-size:.85rem;text-transform:uppercase;letter-spacing:.2em}
-#menu a:not(.btn):hover{color:var(--claro)}
+@media(hover:hover){#menu a:not(.btn):hover{color:var(--claro)}}
 .tema-btn{order:2;display:flex;align-items:center;gap:.55rem;background:none;border:1px solid var(--linha);color:var(--texto);padding:.45rem .8rem;cursor:pointer;font:600 .75rem var(--corpo);text-transform:uppercase;letter-spacing:.2em;transition:border-color .2s}
-.tema-btn:hover{border-color:var(--texto)}
+@media(hover:hover){.tema-btn:hover{border-color:var(--texto)}}
 .tema-btn i{width:14px;height:14px;border-radius:50%;border:1.5px solid currentColor;background:linear-gradient(90deg,currentColor 50%,transparent 50%)}
-.menu-btn{order:3;display:none;background:none;border:1px solid var(--texto);color:var(--texto);padding:.4rem .9rem;font:600 .8rem var(--corpo);text-transform:uppercase;letter-spacing:.2em}
+.menu-btn{order:3;display:none;background:none;border:0;color:var(--claro);padding:0;cursor:pointer}
+/* Ícone hambúrguer (3 linhas) que vira X quando o menu abre */
+.menu-btn span,.menu-btn span::before,.menu-btn span::after{display:block;width:22px;height:2px;background:currentColor;transition:transform .25s,background .25s}
+.menu-btn span{position:relative;margin:auto}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0}
+.menu-btn span::before{top:-7px}
+.menu-btn span::after{top:7px}
+.menu-btn[aria-expanded="true"] span{background:transparent}
+.menu-btn[aria-expanded="true"] span::before{transform:translateY(7px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span::after{transform:translateY(-7px) rotate(-45deg)}
+/* Botão de PDF do topo: só no celular (no computador o PDF está no menu) */
+.pdf-topo{display:none;order:1;place-items:center;width:44px;height:44px;color:var(--claro)}
+.pdf-topo svg{width:22px;height:22px}
+.pdf-topo:active{transform:scale(.94)}
 .rodape{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center;padding:2rem var(--margem);border-top:1px solid var(--linha);font-size:.75rem;text-transform:uppercase;letter-spacing:.2em;color:var(--texto-suave)}
 @media(max-width:760px){
-  .menu-btn{display:block}
-  .topo{gap:.75rem}
+  .menu-btn{display:grid;width:44px;height:44px;margin-right:-10px}
+  .pdf-topo{display:grid}
+  .logo{font-size:1rem;letter-spacing:.14em;white-space:nowrap}
+  #menu .btn-pdf{display:none}
+  .topo{gap:.35rem}
   .tema-btn span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
-  .tema-btn{padding:.55rem .65rem}
+  .tema-btn{min-width:44px;min-height:44px;justify-content:center;padding:0;border:0;color:var(--claro)}
+  .tema-btn i{width:18px;height:18px}
   #menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;gap:1.25rem;padding:1.5rem var(--margem) 2rem;background:var(--fundo);border-bottom:1px solid var(--linha)}
   #menu.aberto{display:flex}
+  #menu a:not(.btn){padding-block:.6rem}
+  #menu{gap:.25rem}
+  #menu .btn{margin-top:1rem}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+/* TOQUE: resposta imediata ao tocar, sem o destaque azul padrão do navegador */
+a,button,.card{-webkit-tap-highlight-color:transparent}
+.btn:active,.card:active,.tema-btn:active,.menu-btn:active{transform:scale(.98)}
+.btn,.card{transition-property:background,color,border-color,transform}
+/* Celulares bem estreitos (ex.: iPhone SE): nome do topo menor para caber numa linha */
+@media(max-width:360px){.logo{font-size:.85rem;letter-spacing:.08em}}
+/* Dificulta salvar imagens e vídeos: sem menu de "salvar" ao segurar/clicar com o botão direito e sem arrastar */
+img,video{-webkit-user-drag:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.player,.midia{-webkit-touch-callout:none;user-select:none;-webkit-user-select:none}
+/* TEXTO NO CELULAR: corpo um pouco menor e títulos mais contidos, para caber mais palavras por linha */
+@media(max-width:760px){
+  body{font-size:.9375rem;line-height:1.6}
+  section{padding-block:3rem}
+  h2{font-size:1.7rem;margin-bottom:1.5rem}
+}
