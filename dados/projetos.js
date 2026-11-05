@@ -2,6 +2,7 @@
 // imagem: coloque o arquivo em assets/img/ e escreva "assets/img/nome.jpg". Deixe "" para usar a cor.
 // mockups: lista de imagens extras do projeto (opcional).
 // video: um vídeo .mp4 do projeto (opcional). Aparece no carrossel depois das imagens.
+// quadros: imagens tiradas do vídeo, usadas só no PDF (o PDF não toca vídeo).
 // Os textos abaixo são exemplos completos: troque pelos seus projetos reais.
 const PROJETOS = [
   {
@@ -94,6 +95,7 @@ const PROJETOS = [
     "imagem": "",
     "mockups": [],
     "video": "assets/img/fms/Vídeo Outubro Rosa FMS.mp4",
+    "quadros": ["assets/img/fms/quadro-1.jpg", "assets/img/fms/quadro-2.jpg"],
     "contexto": "Projeto audiovisual desenvolvido para o Grupo FMS durante a campanha Outubro Rosa. A proposta foi produzir um vídeo institucional de conscientização sobre a prevenção do câncer de mama, promovendo informação e incentivando o cuidado com a saúde entre os colaboradores da empresa.",
     "problema": "O desafio era abordar um tema de saúde tão importante de maneira acolhedora, informativa e acessível, criando uma comunicação que fosse além de uma campanha institucional tradicional. O vídeo precisava aproximar o assunto da realidade dos colaboradores, valorizando tanto a orientação profissional quanto as mensagens de conscientização compartilhadas pelas próprias funcionárias.",
     "conceito": "A narrativa foi construída a partir da união entre informação e proximidade. A participação de uma médica especialista trouxe embasamento e orientação profissional, enquanto os depoimentos das colaboradoras acrescentaram uma dimensão humana à campanha.",

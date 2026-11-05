@@ -3,7 +3,10 @@ dados/perfil.js       nome, experiências, formação, foto (assets/img/foto.jpg
 dados/projetos.js     seus projetos (copie um bloco para adicionar outro)
 dados/habilidades.js  suas competências
 assets/img/           coloque aqui as imagens dos projetos
-assets/portfolio.pdf  coloque aqui o seu PDF (o botão "Baixar PDF" aponta para ele)
+assets/portfolio.pdf  PDF do portfólio (o botão "Baixar PDF" aponta para ele)
+pdf/portfolio.html    gera o PDF com os mesmos dados do site. Para atualizar: abra no Chrome/Brave,
+                      Imprimir (Ctrl+P) > Salvar como PDF, Layout Paisagem, Margens Nenhuma,
+                      marque "Gráficos de plano de fundo" e salve por cima de assets/portfolio.pdf
 css/base.css          cores, fontes, menu e rodapé. No topo ficam os dois temas:
                       azul (:root) e branco (:root[data-tema="branco"])
 js/tema.js            botão que alterna entre os temas (lembra a escolha do visitante)
