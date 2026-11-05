@@ -1,27 +1,54 @@
-/* CONTATO */
-#contato .miolo{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(16rem,.85fr);gap:clamp(2rem,5vw,5rem);align-items:stretch}
-#contato form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
-#contato label{display:grid;gap:.45rem;font-weight:600;font-size:.75rem;text-transform:uppercase;letter-spacing:.12em}
-#contato label:last-of-type{grid-column:1/-1}
-#contato input,#contato textarea{width:100%;padding:.85rem 1rem;border-radius:.35rem;border:1px solid var(--linha);background:var(--fundo-2);color:var(--texto);font:400 1rem/1.5 var(--corpo);text-transform:none;letter-spacing:normal}
-#contato textarea{resize:vertical;min-height:9rem}
-#contato input:focus,#contato textarea:focus{border-color:var(--destaque);outline:2px solid var(--destaque);outline-offset:1px}
-#contato form .btn{justify-self:start}
-#contato .cartao-contato{display:flex;flex-direction:column;justify-content:center;gap:1.75rem;padding:clamp(1.5rem,4vw,2.5rem);border-radius:.5rem;background:#3F68F4;color:#E9EAED}
-#contato .cartao-contato h3{margin-bottom:.55rem;color:inherit;font-size:1rem;letter-spacing:.08em}
-#contato .cartao-contato p{font-size:.9rem;line-height:1.6}
+/* CONTATO: um cartão com dois blocos — convite + WhatsApp (ação principal) e outros canais */
+/* Cores do cartão e do botão ficam nestas variáveis */
+/* Tema azul (escuro): cartão escuro, contorno e texto claros */
+#contato .cartao-contato{--cartao-fundo:#0a1f28;--cartao-texto:#E9EAED;--cartao-suave:#A3AEC0;--cartao-linha:rgba(233,234,237,.18);--botao:#3F68F4;--botao-texto:#FFFFFF}
+/* Tema branco (claro): o espelho — cartão claro, contorno e texto escuros, botão azul */
+:root[data-tema="branco"] #contato .cartao-contato{--cartao-fundo:#F3F4F7;--cartao-texto:#001219;--cartao-suave:#5A6585;--cartao-linha:rgba(0,18,25,.14);--botao:#2F55D9}
+
+#contato .cartao-contato{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);max-width:64rem;border:1px solid var(--cartao-texto);border-radius:.5rem;background:var(--cartao-fundo);color:var(--cartao-texto)}
+#contato .convite,#contato .canais{display:flex;flex-direction:column;align-items:flex-start;gap:.9rem;padding:clamp(1.5rem,4vw,2.75rem)}
+#contato .canais{justify-content:center;gap:1.4rem;border-left:1px solid var(--cartao-linha)}
+/* Cada grupo (e-mail, redes): rótulo próximo do conteúdo */
+#contato .grupo{display:flex;flex-direction:column;align-items:flex-start;gap:.15rem}
+#contato .grupo .lista{margin-top:.5rem}
+/* Rótulo "Redes sociais" na cor principal do cartão (branco no tema escuro) */
+#contato #rotulo-redes{color:var(--cartao-texto)}
 #contato .cartao-contato a{color:inherit}
+
+/* Convite */
+#contato .convite h3{color:inherit;font-size:clamp(1.3rem,2.4vw,1.75rem);letter-spacing:.05em}
+#contato .convite p{color:var(--cartao-suave);font-size:.95rem;line-height:1.6}
+
+/* Botão do WhatsApp: azul, mesmo arredondamento do cartão; ao passar o mouse ou pressionar, fica vazado */
+#contato .cartao-contato .btn-whats{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;min-height:44px;padding:.55rem 1.15rem;margin-top:.4rem;border:1.5px solid var(--botao);border-radius:.5rem;background:var(--botao);color:var(--botao-texto);text-decoration:none;font:600 .72rem var(--corpo);text-transform:uppercase;letter-spacing:.12em;white-space:nowrap;transition:background .2s,color .2s,border-color .2s,transform .2s}
+#contato .cartao-contato .btn-whats svg{width:1.1rem;height:1.1rem;flex:none}
+#contato .cartao-contato .btn-whats:active{background:transparent;color:inherit;border-color:currentColor;transform:scale(.98)}
+@media(hover:hover){#contato .cartao-contato .btn-whats:hover{background:transparent;color:inherit;border-color:currentColor}}
+#contato .cartao-contato .btn-whats:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+
+/* Outros canais: rótulo único, e-mail e ícones das redes */
+#contato .rotulo{color:var(--cartao-suave);font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em}
 #contato .email-contato{display:inline-flex;min-height:44px;align-items:center;gap:.65rem;font-weight:600;text-decoration-thickness:1px;text-underline-offset:.2em;overflow-wrap:anywhere}
 #contato .email-contato svg{width:1.25rem;height:1.25rem;flex:none}
-#contato .lista{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.65rem;margin-top:.85rem}
+#contato .lista{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.65rem}
 #contato .lista a{display:grid;place-items:center;width:2.75rem;height:2.75rem;border:1px solid currentColor;border-radius:50%;transition:background .2s,color .2s,transform .2s}
-@media(hover:hover){#contato .lista a:hover{background:#102124;color:#3F68F4;transform:translateY(-2px)}}
+@media(hover:hover){#contato .lista a:hover{background:var(--cartao-texto);color:var(--cartao-fundo);transform:translateY(-2px)}}
+#contato .lista a:active{transform:scale(.94)}
 #contato .lista svg{width:1.25rem;height:1.25rem;fill:currentColor}
 #contato .lista svg.instagram{fill:none;stroke:currentColor;stroke-width:1.8}
 #contato .lista svg.instagram .ponto{fill:currentColor;stroke:none}
 #contato .lista .icone-texto{font-size:.7rem;font-weight:800;letter-spacing:-.08em}
-:root[data-tema="branco"] #contato .cartao-contato{background:#102124;color:#FFFFFF}
-@media(hover:hover){:root[data-tema="branco"] #contato .lista a:hover{background:#FFFFFF;color:#102124}}
-@media(max-width:760px){#contato .miolo{grid-template-columns:1fr}}
-@media(max-width:460px){#contato form{grid-template-columns:1fr}#contato label:last-of-type{grid-column:auto}}
-@media(max-width:760px){#contato .cartao-contato p{font-size:.875rem}}
+
+/* Tablet e celular: os dois blocos um embaixo do outro, separados por uma linha */
+@media(max-width:900px){
+  #contato .cartao-contato{grid-template-columns:minmax(0,1fr)}
+  #contato .canais{border-left:0;border-top:1px solid var(--cartao-linha)}
+}
+@media(max-width:760px){#contato .convite p{font-size:.875rem}}
+/* Celulares estreitos: botão ocupa a largura do cartão */
+@media(max-width:400px){
+  #contato .convite h3{font-size:1.2rem}
+  #contato .cartao-contato .btn-whats{width:100%;padding-inline:.75rem;letter-spacing:.08em}
+  #contato .email-contato{font-size:.8rem;gap:.5rem}
+  #contato .convite,#contato .canais{padding-inline:1.25rem}
+}

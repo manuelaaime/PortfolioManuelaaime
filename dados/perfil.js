@@ -20,6 +20,9 @@ const PERFIL = {
     "MBA em Marketing e Inovação, UNIESP (2026)"
   ],
   email: "manuelaaime.tech@gmail.com",
+  // WhatsApp: só números, com 55 (Brasil) e DDD. A mensagem já aparece escrita para quem clicar.
+  whatsapp: "5583988592808",
+  mensagemWhatsapp: "Olá, vi seu portfólio e me interessei pelos seus serviços, gostaria de entender mais!",
   links: [
     { nome: "LinkedIn", url: "https://www.linkedin.com/in/manuelaaime" },
     { nome: "Behance", url: "https://www.behance.net/manuelaaime" },
