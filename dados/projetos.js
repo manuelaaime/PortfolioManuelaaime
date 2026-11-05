@@ -1,111 +1,103 @@
 // EDITE AQUI: cada { ... } é um projeto. Copie um bloco para adicionar outro.
 // imagem: coloque o arquivo em assets/img/ e escreva "assets/img/nome.jpg". Deixe "" para usar a cor.
 // mockups: lista de imagens extras do projeto (opcional).
+// video: um vídeo .mp4 do projeto (opcional). Aparece no carrossel depois das imagens.
 // Os textos abaixo são exemplos completos: troque pelos seus projetos reais.
 const PROJETOS = [
   {
-    "titulo": "Café Tropeiro",
+    "titulo": "PULSE",
     "categoria": "Identidade visual",
-    "ano": "2025",
+    "ano": "2026",
     "cor": "#3F68F4",
-    "imagem": "",
-    "mockups": [],
-    "contexto": "Projeto da disciplina de Identidade Visual: criar a marca de uma cafeteria de bairro que torra grãos de pequenos produtores. O briefing pedia uma marca acolhedora, fácil de reconhecer e capaz de funcionar tanto na fachada quanto em embalagens e redes sociais.",
-    "problema": "Cafeterias de bairro costumam parecer iguais: tons de marrom, grãos desenhados e letras manuscritas. A marca precisava se destacar na vitrine e mostrar a origem artesanal sem cair no clichê.",
-    "conceito": "A ideia central é o encontro: o logotipo reúne duas formas de xícara que se encaixam, como pessoas à mesa. A cor vibrante substitui o marrom tradicional e dá energia à marca.",
-    "tipografia": "Bricolage Grotesque Bold nos títulos, pelo desenho de letras expressivo e amigável. Instrument Sans nos textos de apoio, pela boa leitura em tamanhos pequenos, como rótulos e cardápios.",
+    "imagem": "assets/img/pulse/pulse1.jpeg",
+    "mockups": ["assets/img/pulse/pulse2.jpeg", "assets/img/pulse/pulse3.jpeg", "assets/img/pulse/pulse4.jpeg"],
+    "contexto": "Projeto desenvolvido para a Semana Acadêmica de Design Gráfico do Instituto Federal da Paraíba (IFPB) – Campus Cabedelo. Com o tema “IA e Inovação: Automação, Justiça Social e Coletividade”, o Pulse propõe uma experiência que conecta design, tecnologia e criatividade, incentivando a troca de conhecimentos e a construção coletiva.",
+    "problema": "O desafio era traduzir um tema amplo que envolveu tecnologia, inteligência artificial e relações humanas, em uma identidade visual marcante e coerente. A proposta precisava fugir das representações tecnológicas convencionais, criando uma linguagem própria, capaz de comunicar inovação sem perder o caráter criativo, dinâmico e colaborativo do evento.",
+    "conceito": "A identidade parte da ideia de conexão. Os cabos e fios assumem o protagonismo visual, simbolizando as relações entre pessoas e tecnologia, a circulação de informações e a conexão dos estudantes com o evento. A estética foi inspirada em festivais de música como Lollapalooza e Rock In RIo",
+    "tipografia": "Foi desenvolvida uma tipografia exclusiva para o evento, a Circuit Display, inspirada na comunicação por fios e nas conexões. Como tipografia secundária, foi utilizada a IBM Plex Mono Semibold, trazendo equilíbrio, legibilidade e uma referência visual ao universo tecnológico.",
     "paleta": [
-      "#FF006E",
-      "#FFBE0B",
-      "#FB5607",
-      "#001219"
+      "#E363A1",
+      "#F8461C",
+      "#404797",
+      "	#23A361"
     ],
-    "grid": "O logotipo foi construído sobre uma malha de círculos para garantir proporção em todos os tamanhos. A papelaria segue um grid de 12 colunas, e os mockups mostram cartão, copo, sacola e fachada.",
-    "resultado": "Manual de marca de 24 páginas com logotipo, versões, área de proteção, paleta, tipografia e usos incorretos. A marca foi validada com o professor e com dois clientes de teste.",
-    "aplicacao": "A marca foi aplicada em copos, sacolas, cardápio, papelaria e perfil do Instagram. Os mockups mostram a identidade funcionando em materiais impressos e digitais."
+    "resultado": "Manual de marca de 24 páginas com logotipo, versões, limite de redução, paleta, tipografia e usos incorretos. A Identidade Visual foi aprovada pela banca de professores do evento e executada pela equipe que desenvolveu a marca",
+    "aplicacao": "A identidade foi aplicada em diferentes materiais e produtos, incluindo papelaria impressa, peças gráficas para redes sociais, crachás, pôsteres, bottons, camisetas e brindes. Também foi desenvolvido um site exclusivo para o evento."
   },
   {
-    "titulo": "Revista Maré",
-    "categoria": "Editorial",
-    "ano": "2025",
+    "titulo": "Instituto Melhor Amigo",
+    "categoria": "Ergonomia Informacional",
+    "ano": "2026",
     "cor": "#3F68F4",
-    "imagem": "",
+    "imagem": "assets/img/melhoramigo/ma1.jpeg",
     "mockups": [],
-    "contexto": "Projeto da disciplina de Design Editorial: diagramar o primeiro número de uma revista independente sobre cultura e cotidiano de cidades litorâneas, com 32 páginas e tiragem pequena.",
-    "problema": "A revista tinha textos longos, fotos de qualidade variada e pouco orçamento. Era preciso criar ritmo de leitura e uma identidade própria sem depender de muitas imagens.",
-    "conceito": "O conceito é a maré: páginas que alternam momentos cheios e vazios, com textos densos seguidos de páginas de respiro tipográfico, como ondas que avançam e recuam.",
-    "tipografia": "Títulos em Bricolage Grotesque ExtraBold em tamanhos grandes. Texto corrido em uma fonte serifada legível de 10 pt, com entrelinha de 15 pt, para leitura longa no papel.",
+    "contexto": "Projeto acadêmico desenvolvido para a disciplina de Ergonomia Informacional, com a proposta de criar um protótipo de alta fidelidade para um aplicativo de adoção de animais. O Instituto Melhor Amigo foi pensado para aproximar pessoas e animais que buscam um novo lar, tornando o processo de adoção mais acessível e intuitivo.",
+    "problema": "A experiência de adoção pode apresentar dificuldades relacionadas à localização de animais, ao acesso às informações e à compreensão das etapas necessárias para adotar. O desafio era desenvolver uma interface que facilitasse essa jornada, organizando informações de maneira clara e proporcionando uma navegação simples e eficiente.",
+    "conceito": "O aplicativo busca aproximar pessoas e animais por meio de uma experiência digital acolhedora, acessível e intuitiva. A interface foi pensada para transmitir confiança e afeto, equilibrando a sensibilidade da causa animal com a funcionalidade de um produto digital.",
+    "tipografia": "A família tipográfica Inter foi escolhida por sua versatilidade, legibilidade e clareza em ambientes digitais.",
     "paleta": [
-      "#8338EC",
-      "#3A86FF",
-      "#FFBE0B",
-      "#001219"
+      "#038D93",
+      "#FD5602",
+      "#FDAD02",
+      "#FFF2E8",
+      "#ffffff",
+      "#000000",
     ],
-    "grid": "Grid de 6 colunas com margens generosas e módulos de linha de base de 15 pt. Há três tipos de página: abertura de matéria, texto contínuo e página de respiro com citação.",
-    "resultado": "Revista com 32 páginas, capa, índice, cinco matérias e uma seção de agenda. Os arquivos foram preparados em PDF para impressão, com sangria e marcas de corte.",
-    "aplicacao": "A revista foi impressa em pequena tiragem e distribuída em cafés e centros culturais. Uma versão digital foi publicada para leitura no celular."
+    "resultado": "Foram desenvolvidas 10 telas de alta fidelidade, cada uma direcionada à aplicação de uma das 10 heurísticas de usabilidade de Jakob Nielsen. O objetivo foi explorar princípios como visibilidade do status do sistema, consistência, prevenção de erros, reconhecimento em vez de memorização e liberdade de navegação, transformando fundamentos teóricos em soluções práticas de interface.",
+    "aplicacao": "As soluções foram apresentadas por meio de telas digitais e mockups do aplicativo, demonstrando a aplicação da identidade visual."
   },
   {
-    "titulo": "App Feira Viva",
-    "categoria": "UI/UX",
+    "titulo": "Especialista Anvisa e EA Suplementos",
+    "categoria": "Design Editorial",
+    "ano": "2026",
+    "cor": "#3F68F4",
+    "imagem": "assets/img/ea/1.jpeg",
+    "mockups": ["assets/img/ea/2.jpeg", "assets/img/ea/3.jpeg", "assets/img/ea/4.jpeg"],
+    "contexto": "Gestão de redes sociais e a criação de peças gráficas para as marcas Especialista Anvisa e EA Suplementos. A comunicação abrangia os segmentos de assuntos regulatórios, saúde, cosméticos, bem-estar e suplementos exclusivos, com conteúdos voltados à informação, orientação e divulgação de produtos.",
+    "problema": "O principal desafio era transformar assuntos técnicos e regulatórios em conteúdos visuais acessíveis, atrativos e de fácil compreensão. Era necessário acompanhar as atualizações e tendências do setor, especialmente as publicações da Anvisa, traduzindo informações relevantes em peças que despertassem o interesse do público sem comprometer a credibilidade e a precisão das informações.",
+    "conceito": "A proposta era desenvolver uma comunicação contemporânea, direta e reconhecível, que unisse a seriedade dos assuntos regulatórios à energia do segmento de saúde e suplementação.",
+    "tipografia": "A família tipográfica Montserrat foi escolhida por sua estética geométrica, moderna e versátil. Sua aplicação permite construir hierarquias visuais bem definidas, destacando títulos, informações importantes e chamadas para ação, mantendo a consistência entre as publicações.",
+    "paleta": [
+      "#31FD1F",
+      "#000000",
+      "#FFFFFF"
+    ],
+    "resultado": "O trabalho resultou em uma comunicação digital estruturada para as marcas Especialista Anvisa e EA Suplementos, com produção contínua de conteúdo, fortalecimento da presença nas redes sociais e padronização visual das publicações.",
+    "aplicacao": "A identidade foi aplicada em posts, carrosséis, stories e outras peças gráficas para redes sociais. Além da criação visual, o trabalho envolveu o gerenciamento dos perfis, acompanhamento de pautas relevantes, planejamento de conteúdos e adaptação da comunicação às necessidades de cada marca."
+  },
+  {
+    "titulo": "Chocolatto | Três Corações",
+    "categoria": "Fotografia Digital",
+    "ano": "2026",
+    "cor": "#3F68F4",
+    "imagem": "assets/img/trescoracoes/1.jpeg",
+    "mockups": ["assets/img/trescoracoes/2.jpeg", "assets/img/trescoracoes/3.jpeg"],
+    "contexto": "Projeto prático desenvolvido em laboratório para a disciplina de Fotografia Digital, com foco na fotografia publicitária de produtos. A proposta consistiu em construir uma composição fotográfica para o Chocolatto, da marca Três Corações, explorando elementos visuais capazes de comunicar os atributos do produto e despertar o interesse do consumidor.",
+    "problema": "A fotografia precisava transmitir uma experiência sensorial, destacando o caráter envolvente do chocolate sem perder a sofisticação da apresentação.",
+    "conceito": "A direção fotográfica foi construída a partir do conceito “Charmoso, Envolvente e Caloroso”, tendo como referência o arquétipo do Amante. A proposta era despertar sensações de prazer, desejo e aconchego, transformando a fotografia em uma representação visual da experiência de consumir o produto.",
+    "paleta": [
+      "#8C1C1D",
+      "#A36D48",
+      "#BD8D54",
+      "#3c220C"
+    ],
+    "composicao": "O cenário foi construído sobre um fundo marrom, utilizando grãos e um pedaço de madeira como adereços (props). Esses elementos foram escolhidos para reforçar a conexão com o universo do chocolate e criar profundidade visual sem competir com o produto.",
+    "iluminacao": "A fotografia utilizou iluminação lateral e quente, criando sombras suaves e valorizando as texturas, os volumes e os detalhes da embalagem. O ângulo frontal foi escolhido para evidenciar o produto, enquanto o enquadramento em plano detalhe (close-up) aproxima o observador da composição, destacando características visuais e estimulando uma percepção mais sensorial.",
+    "resultado": "O resultado foi uma fotografia publicitária de produto que explora a estética sensorial do chocolate, traduzindo visualmente os conceitos de charme, envolvimento e calor. A direção de arte buscou valorizar a embalagem e as cápsulas, equilibrando sofisticação e apelo comercial.",
+    "aplicacao": "A composição foi desenvolvida em ambiente de laboratório, envolvendo planejamento de cenário, seleção de adereços, definição de paleta cromática, posicionamento do produto e controle da iluminação. O exercício permitiu explorar técnicas de fotografia publicitária e direção de arte aplicadas à valorização de produtos."
+  },
+  {
+    "titulo": "Grupo FMS | Outubro Rosa",
+    "categoria": "Produção Audiovisual",
     "ano": "2026",
     "cor": "#3F68F4",
     "imagem": "",
     "mockups": [],
-    "contexto": "Projeto de conclusão de curso de UI/UX: um aplicativo que conecta moradores a feiras livres e produtores locais, com cardápio de produtos, reservas e retirada.",
-    "problema": "Pesquisas com 18 pessoas mostraram que os moradores não sabem quais produtos há em cada feira nem os horários. Já os feirantes perdem vendas por falta de divulgação.",
-    "conceito": "O app funciona como uma feira de bolso: o visual é colorido, cada categoria de alimento tem sua cor, e as telas são simples para pessoas de qualquer idade.",
-    "tipografia": "Instrument Sans em todas as telas, nos pesos 500 e 600, pela clareza em tamanhos pequenos. Botões e rótulos usam no mínimo 16 px para facilitar a leitura.",
-    "paleta": [
-      "#3A86FF",
-      "#FFBE0B",
-      "#FF006E",
-      "#001219"
-    ],
-    "grid": "Grid de 4 colunas no celular, com espaçamentos múltiplos de 8 px. O processo incluiu pesquisa, personas, jornada do usuário, wireframes de baixa fidelidade e protótipo navegável no Figma.",
-    "resultado": "Protótipo com 24 telas, biblioteca de componentes e teste de usabilidade com 8 pessoas. A tarefa de reservar um produto passou de 6 toques para 3 após os ajustes.",
-    "aplicacao": "O protótipo foi apresentado à banca e a uma associação de feirantes. O design system deixa o projeto pronto para desenvolvimento."
-  },
-  {
-    "titulo": "Doce Caminho",
-    "categoria": "Embalagem",
-    "ano": "2024",
-    "cor": "#3F68F4",
-    "imagem": "",
-    "mockups": [],
-    "contexto": "Projeto de Design de Embalagem: criar a linha de embalagens para uma marca artesanal de doces de frutas do Nordeste, para venda em feiras e presentes.",
-    "problema": "As embalagens precisavam proteger os doces, caber em pequenas caixas de transporte e comunicar o sabor sem ficar visualmente poluídas.",
-    "conceito": "Cada sabor ganhou uma cor e uma forma geométrica simples inspirada na fruta, formando uma coleção que fica ainda mais bonita quando exposta lado a lado.",
-    "tipografia": "Títulos em Bricolage Grotesque, com nomes dos sabores em caixa alta e informações legais em Instrument Sans, no tamanho mínimo exigido pela legislação.",
-    "paleta": [
-      "#FB5607",
-      "#FFBE0B",
-      "#FF006E",
-      "#8338EC"
-    ],
-    "grid": "A planificação foi feita em papel cartão, com abas de encaixe sem cola. O grid divide a frente da caixa em três áreas: marca, forma da fruta e informações do produto.",
-    "resultado": "Quatro caixas, uma para cada sabor, mais uma embalagem de presente com os quatro juntos. Os mockups foram feitos em 3D e a faca de corte foi testada em protótipo físico.",
-    "aplicacao": "A coleção foi produzida em pequena tiragem e vendida em feiras de artesanato, com ótima resposta do público às cores e ao formato das caixas."
-  },
-  {
-    "titulo": "Ateliê Sol Nascente",
-    "categoria": "Identidade visual",
-    "ano": "2024",
-    "cor": "#3F68F4",
-    "imagem": "",
-    "mockups": [],
-    "contexto": "Projeto autoral: criar a identidade de um ateliê de cerâmica e bordado que também oferece oficinas para iniciantes.",
-    "problema": "A marca precisava transmitir o trabalho manual sem parecer rústica demais e atrair tanto público jovem quanto adultos que buscam atividades criativas.",
-    "conceito": "O conceito parte da marca da mão no barro: o símbolo é um sol formado por pontos, como se fosse carimbado. A identidade mistura o artesanal com a cor forte e moderna.",
-    "tipografia": "Bricolage Grotesque para o logotipo e Instrument Sans para o texto. O contraste entre letras expressivas e leitura limpa traduz a combinação de tradição e contemporaneidade.",
-    "paleta": [
-      "#FFBE0B",
-      "#FF006E",
-      "#001219",
-      "#E8EEF0"
-    ],
-    "grid": "O símbolo usa uma malha de pontos de 8 por 8 módulos. Os materiais usam grid modular em A5 e A4, com as cores aplicadas em blocos grandes.",
-    "resultado": "Logotipo com cinco versões, kit de papelaria, etiquetas para peças de cerâmica e modelo de posts para redes sociais, todos reunidos em um guia de uso.",
-    "aplicacao": "A identidade foi aplicada em etiquetas, sacolas de papel, cartões de visita, convites das oficinas e no perfil do Instagram do ateliê."
+    "video": "assets/img/fms/Vídeo Outubro Rosa FMS.mp4",
+    "contexto": "Projeto audiovisual desenvolvido para o Grupo FMS durante a campanha Outubro Rosa. A proposta foi produzir um vídeo institucional de conscientização sobre a prevenção do câncer de mama, promovendo informação e incentivando o cuidado com a saúde entre os colaboradores da empresa.",
+    "problema": "O desafio era abordar um tema de saúde tão importante de maneira acolhedora, informativa e acessível, criando uma comunicação que fosse além de uma campanha institucional tradicional. O vídeo precisava aproximar o assunto da realidade dos colaboradores, valorizando tanto a orientação profissional quanto as mensagens de conscientização compartilhadas pelas próprias funcionárias.",
+    "conceito": "A narrativa foi construída a partir da união entre informação e proximidade. A participação de uma médica especialista trouxe embasamento e orientação profissional, enquanto os depoimentos das colaboradoras acrescentaram uma dimensão humana à campanha.",
+    "captacao": "A captação foi planejada para valorizar os relatos, preservar a clareza das mensagens e construir uma comunicação audiovisual adequada ao contexto institucional.",
+    "aplicacao": "O vídeo foi apresentado aos colaboradores do Grupo FMS como parte das ações internas da campanha Outubro Rosa, funcionando como uma ferramenta de comunicação e conscientização no ambiente corporativo."
   }
 ];

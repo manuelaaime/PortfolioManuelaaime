@@ -2,21 +2,27 @@
 const PERFIL = {
   nome: "Manuela Aimê",
   foto: "assets/img/foto.jpg",
-  especialidade: "Designer gráfica e de interfaces",
+  especialidade: "Estrategista de Marketing e Social Media",
   propostaDeValor: "Transformo ideias em marcas e telas claras, vibrantes e fáceis de usar.",
   estetica: "Cor saturada, tipografia firme e muito respiro.",
-  bio: "Sou designer em formação, apaixonada por identidade visual, design editorial e UI/UX. Meu processo começa na pesquisa e passa por muita experimentação com cor e tipografia, sempre com o objetivo de criar projetos que tenham personalidade e funcionem na prática. Nos últimos anos, desenvolvi marcas, revistas, embalagens e protótipos de aplicativos, tanto em projetos acadêmicos quanto autorais. Procuro oportunidades de estágio e trabalhos em estúdios e equipes de produto, onde possa aprender e contribuir.",
-  interesses: ["Identidade visual", "Design editorial", "UI/UX", "Embalagem"],
-  // Exemplos: troque pelas suas experiências reais. Textos curtos funcionam melhor (viram etiquetas).
-  experiencias: ["Estágio em design gráfico", "Freelancer", "Social media", "Monitoria de tipografia"],
-  formacao: [
-    "Bacharelado em Design, Nome da Universidade (2022–2026)",
-    "Curso de UI/UX Design, Nome da Plataforma (2025)"
+  // bio: cada texto entre aspas vira um parágrafo da seção "Sobre mim".
+  bio: [
+    "Olá, eu me chamo Manuela Aimê, tenho 21 anos e sou estudante do 4º período de Design Gráfico no IFPB. Atuo há 2 anos nas áreas de Marketing Digital e Social Media, com experiência em planejamento, produção de conteúdo, copywriting, gestão de redes sociais, edição de vídeos e criação de peças gráficas.",
+    "Minha trajetória une tecnologia, criatividade e comunicação. Gosto de transformar ideias em projetos visuais estratégicos, explorar novas possibilidades e desenvolver soluções que conectam marcas e pessoas."
   ],
-  email: "seuemail@exemplo.com",
+  interesses: ["Marketing Digital", "Design editorial", "Branding", "Videomaker"],
+  // Exemplos: troque pelas suas experiências reais. Textos curtos funcionam melhor (viram etiquetas).
+  experiencias: ["Estágio em Marketing", "Estágio em Social Media", 
+    "Identidade Visual do evento PULSE", "Freelancer"],
+  formacao: [
+    "Tecnologia em Design Gráfico, IFPB (2025–2027)",
+    "Sistemas de Informação, UNIESP (2024-2027)",
+    "MBA em Marketing e Inovação, UNIESP (2026)"
+  ],
+  email: "manuelaaime.tech@gmail.com",
   links: [
-    { nome: "LinkedIn", url: "https://www.linkedin.com/in/seu-perfil" },
-    { nome: "Behance", url: "https://www.behance.net/seu-perfil" },
-    { nome: "Instagram", url: "https://www.instagram.com/seu-perfil" }
+    { nome: "LinkedIn", url: "https://www.linkedin.com/in/manuelaaime" },
+    { nome: "Behance", url: "https://www.behance.net/manuelaaime" },
+    { nome: "Instagram", url: "https://www.instagram.com/ollivaricreative" }
   ]
 };
