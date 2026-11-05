@@ -3,8 +3,8 @@ const PERFIL = {
   nome: "Manuela Aimê",
   foto: "assets/img/foto.jpg",
   especialidade: "Estrategista de Marketing e Social Media",
-  propostaDeValor: "Transformo ideias em marcas e telas claras, vibrantes e fáceis de usar.",
-  estetica: "Cor saturada, tipografia firme e muito respiro.",
+  propostaDeValor: "Estratégia, criatividade e design para construir marcas com identidade.",
+  estetica: "Planejamento | Comunicação | Criação",
   // bio: cada texto entre aspas vira um parágrafo da seção "Sobre mim".
   bio: [
     "Olá, eu me chamo Manuela Aimê, tenho 21 anos e sou estudante do 4º período de Design Gráfico no IFPB. Atuo há 2 anos nas áreas de Marketing Digital e Social Media, com experiência em planejamento, produção de conteúdo, copywriting, gestão de redes sociais, edição de vídeos e criação de peças gráficas.",
